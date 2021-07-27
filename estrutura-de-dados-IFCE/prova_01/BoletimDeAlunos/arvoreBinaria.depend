@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1622208903 source:d:\logica-programação\estrutura-de-dados-ifce\prova_02\arvorebinaria\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<string>
+	"auxiliar.h"
+	"Layout.h"
+
+1622133492 d:\logica-programação\estrutura-de-dados-ifce\prova_02\arvorebinaria\auxiliar.h
+	<ctype.h>
+	<string.h>
+	<time.h>
+
+1622139739 d:\logica-programação\estrutura-de-dados-ifce\prova_02\arvorebinaria\layout.h
+
+1622246218 source:d:\logica-programação\estrutura-de-dados-ifce\prova_02\boletimdealunos\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<string>
+	"auxiliar.h"
+	"Layout.h"
+
+1622133492 d:\logica-programação\estrutura-de-dados-ifce\prova_02\boletimdealunos\auxiliar.h
+	<ctype.h>
+	<string.h>
+	<time.h>
+
+1622246645 d:\logica-programação\estrutura-de-dados-ifce\prova_02\boletimdealunos\layout.h
+
