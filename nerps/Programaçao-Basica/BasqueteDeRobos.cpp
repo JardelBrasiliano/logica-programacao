@@ -1,4 +1,13 @@
 #include<bits/stdc++.h>
+#include<vector>
+using namespace std;
+
+int main ()
+{
+	ios_base::sync_with_stdio(false);
+ 	cin.tie(NULL);
+
+ 	#include<bits/stdc++.h>
 using namespace std;
 
 int main ()
@@ -16,5 +25,5 @@ int main ()
 		cout << 3 << endl;
 	}
 	
-	return 0;
+	return 0;	
 }		
