@@ -1,0 +1,1 @@
+Local para deixar conteudos sobre algum tema em especifico para ser lembrado depois.
