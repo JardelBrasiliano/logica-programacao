@@ -14,13 +14,13 @@ int main ()
 		cin >> R >> L;
 		int loopMax = (R+L);
 		int diff = R-L;
-    int totalForSum = (loopMax-abs(diff))/2;
+   		int totalForSum = (loopMax-abs(diff))/2;
 
 		for (int i = totalForSum; i > 0; i--) { 
-      soma += i;
+      			soma += i;
 		}	
 		printf("Case #%d: %d\n", caseTest++, soma);
-    soma = 0;
+    		soma = 0;
 	}	
 
 	return 0;
