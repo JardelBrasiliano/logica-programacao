@@ -21,7 +21,7 @@ int main() {
       memset(list, 0, sizeof list);
       for (int j = inicio-1; j < termino; j++) {
         currentValue = blockCharacters[j];
-        cout << blockCharacters[j] << endl;
+
         if (list[currentValue] == 0) {
           list[currentValue]++;
           contSobrando++;
