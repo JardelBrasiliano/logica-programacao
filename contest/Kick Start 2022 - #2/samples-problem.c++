@@ -6,21 +6,17 @@ int main ()
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
 
-	int L, R, caseTest = 1;
+	int n, m, total, aux, aux1 = 1;
 	int amountTest; cin >> amountTest;
 
-	int soma = 0;
 	while (amountTest--) {
-		cin >> R >> L;
-		int loopMax = (R+L);
-		int diff = R-L;
-   		int totalForSum = (loopMax-abs(diff))/2;
-
-		for (int i = totalForSum; i > 0; i--) { 
-      			soma += i;
-		}	
-		printf("Case #%d: %d\n", caseTest++, soma);
-    		soma = 0;
+		cin >> n >> m;
+		total = 0;
+		for (int i = 0; i < n; i++) {
+			cin >> aux;
+			total = aux + total;
+		}
+		printf("Case #%d: %d\n", aux1++, total - (m*(total/m)));
 	}	
 
 	return 0;
