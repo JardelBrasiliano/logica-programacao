@@ -1,40 +1,45 @@
-// RESULT - TEST 01 - ok ; TESTE 02 - TLE
+#include <iostream>
 #include <bits/stdc++.h>
 
 using namespace std;
-
+        
 int main() {
-  int T;
-  cin >> T;
-  for (int tc = 1; tc <= T; tc++) {
-    int list[100], currentValue, contSobrando = 0, inicio, termino, cont = 0;
-    int N, Q;
-    cin >> N >> Q;
+  int n,q,ans=0;
+  cin>>n>>q;
+  string s;
+  
+  cin>>s;
+  vector<vector<int>> prefix(n+1,vector<int>(26, 0));
 
-    string blockCharacters;
-    cin >> blockCharacters;
-
-
-    for (int i = 0; i < Q; i++) {
-      contSobrando = 0;
-      cin >> inicio >> termino;
-      memset(list, 0, sizeof list);
-      for (int j = inicio-1; j < termino; j++) {
-        currentValue = blockCharacters[j];
-
-        if (list[currentValue] == 0) {
-          list[currentValue]++;
-          contSobrando++;
-        } else if (list[currentValue] == 1) {
-          list[currentValue]--;
-          contSobrando--;
-        }
-      }
-
-      if (contSobrando <= 1) cont++;
+  for(int i=0;i<n;i++){
+    int temp=s[i]-'A';
+    for(int j=0;j<26;j++){
+        prefix[i+1][j]=prefix[i][j];
     }
-
-    cout << "Case #" << tc << ": " << cont << endl;
+    prefix[i+1][temp]++;
   }
-  return 0;
+
+  while(q--){
+      int l,r;
+      cin>>l>>r;
+      l--;
+      r--;
+      int even=0,odd=0,total=r-l+1;
+      for(int i=0;i<26;i++){
+          int temp = prefix[r+1][i]-prefix[l][i];
+          if(temp>0 && temp&1){
+            odd++;
+          }
+          else if(temp>0 && !(temp&1)){
+            even++;
+          }
+      }
+      if(odd==0 && even){
+          ans++;
+      }
+      else if(total&1 && odd==1){
+          ans++;
+      }
+  }
+  cout << ans << endl;
 }
