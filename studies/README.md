@@ -1,6 +1,6 @@
 Local para deixar conteudos sobre algum tema em especifico para ser lembrado depois.
 
-## Algoritmos classicos
+## Assuntos interessantes
 - Palindrome
 
 - Subsequence 
@@ -8,6 +8,16 @@ Local para deixar conteudos sobre algum tema em especifico para ser lembrado dep
   - [Exemplo 01](https://www.youtube.com/watch?v=Ua0GhsJSlWM)
   - [Exemplo 02](https://www.youtube.com/watch?v=99RVfqklbCE)
   - [Questao resolvida 01 - Google kick start](../google-kick-start//Round%20A%202022//speed-typing.cpp)
+
+- Prefix Sum
+  - [Aula]()
+  - [Exemplo 01]()
+  - [Questao resolvida 01 - ]()
+
+- Árvore de Sufixos
+  - [Aula](https://www.youtube.com/watch?v=lTFP1Y0mVIk)
+  - [Exemplo 01]()
+  - [Questao resolvida 01 - ]()
 
 ## Estrutura de dados
 - Map
