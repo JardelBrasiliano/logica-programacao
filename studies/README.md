@@ -11,13 +11,14 @@ Local para deixar conteudos sobre algum tema em especifico para ser lembrado dep
 
 - Prefix Sum
   - [Aula]()
+  - [Algoritmo](../algorithms/prefix-sum.c%2B%2B)
   - [Exemplo 01]()
-  - [Questao resolvida 01 - ]()
+  - [Questao resolvida 01]()
 
 - Árvore de Sufixos
   - [Aula](https://www.youtube.com/watch?v=lTFP1Y0mVIk)
   - [Exemplo 01]()
-  - [Questao resolvida 01 - ]()
+  - [Questao resolvida 01]()
 
 ## Estrutura de dados
 - Map
