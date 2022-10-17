@@ -6,7 +6,6 @@ using namespace std;
 
 void solve() {
   int p;cin>>p; 
-  vector<int> v; 
 
   for(int j = 0; j < p; j++) {
     int cinAux;cin>>cinAux;
