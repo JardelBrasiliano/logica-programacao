@@ -5,43 +5,34 @@
 using namespace std;
 
 void solve() {
-  int n, k;cin >> n >> k;
-  int tem = -1;
+  int n, k;
+  cin >> n >> k;
 
-  for(int i = 1; i <= n; i +=2) {
-    int a = i;
-    int b = i+1;
-    long long int aux = ((a + k));
-    long long int aux1 = ((aux) * (b));
+  for (int i = 1; i <= 3; i += 2)
+  {
+    long long int sumAux = (long long)(i + k) * (i + 1);
+    long long int sumAux2 = (long long)((i + 1) + k) * (i);
 
-    cout << a << " " << b << endl;
-
-    if(aux1% 4 == 0) {
-      if(tem == -1) {
-        // cout << "YES\n";
-        tem = 1;
-      }
-      // cout << a << " " << b << endl;
+    if (sumAux % 4 != 0 && sumAux2 % 4 != 0)
+    {
+      cout << "NO\n";
+      return;
     }
   }
 
-  for(int i = 1; i <= n/2; i++) {
-    int a = i+1;
-    int b = i;
-    long long int aux = ((a + k));
-    long long int aux1 = ((aux) * (b));
+  cout << "YES\n";
+  for (int i = 1; i <= n; i += 2)
+  {
+    long long int sumAux = (long long)(i + k) * (i + 1);
 
-    if(aux1% 4 == 0) {
-      if(tem == -1) {
-        // cout << "YES\n";
-        tem = 1;
-      }
-      // cout << a << " " << b << endl;
+    if (sumAux % 4 == 0)
+    {
+      cout << i << " " << (i + 1) << endl;
     }
-  }
-
-  if(tem == -1) {
-    // cout << "NO\n";
+    else
+    {
+      cout << (i + 1) << " " << i << endl;
+    }
   }
 
   return;

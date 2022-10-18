@@ -3,19 +3,21 @@
 
 using namespace std;
 
+int rc(int a) {
+	if(a == 0) {
+		return 0;
+	}
+	return a + rc(a-1);
+}
+
 void solve() {
 	int n;cin >> n;
-
+ 
 	for (int i = 0; i < n; i++) {
 		int aux;cin >> aux;
 	}
-
-	int auxSum = 0;
-	for (int i = 0; i < 10-n; i++) {
-		auxSum += i;
-	}
-
-	cout << auxSum * 6 << endl;
+ 
+	cout << rc(9-n) * 6 << endl;
 }
 
 int main ()
