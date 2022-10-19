@@ -1,30 +1,15 @@
 // https://codeforces.com/contest/1743/problem/B
-#include<bits/stdc++.h>
-#include<vector>
+#include <bits/stdc++.h>
 
 using namespace std;
 
 void solve() {
 	int n;cin >> n;
 
-	if(n == 3) {
-		cout << "1 2 3\n";
-		return;
-	}
-	
-	if(n == 4) {
-		cout << "2 1 4 3\n";
-		return;
-	}
-
-	cout << "4 1 ";
-	cout << n << " ";
-	for (int i = n-2; i >= 2; i--) {
-		if(i%2 == 0) {
-			cout << i+1 << " ";
-		} else {
-			cout << i-1 << " ";
-		}
+	cout << "1 " << n << " ";
+	for (int i = 2; i <= n - 1; i++)
+	{
+		cout << i << " ";
 	}
 	cout << endl;
 }
