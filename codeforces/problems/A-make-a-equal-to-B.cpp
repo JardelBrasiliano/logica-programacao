@@ -1,5 +1,5 @@
 // A. Make A Equal to B
-// https://codeforces.com/problemset/problem/1736/A
+// https://codeforces.com/problem/problem/1736/A
 // rating: 800
 
 #include <bits/stdc++.h>
