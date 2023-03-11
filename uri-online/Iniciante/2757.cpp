@@ -1,39 +1,24 @@
-// https://www.beecrowd.com.br/judge/pt/problems/view/2747
-
 #include <bits/stdc++.h>
+#include <vector>
+#include <string>
+#include <algorithm>
+
+#define ll long long
 
 using namespace std;
-
-void headerFooter()
-{
-  for (int i = 0; i < 39; i++)
-  {
-    cout << "-";
-  }
-  cout << endl;
-}
-
-void body()
-{
-  cout << "|";
-  for (int i = 0; i < 37; i++)
-  {
-    cout << " ";
-  }
-  cout << "|\n";
-}
 
 int main()
 {
   ios_base::sync_with_stdio(false);
   cin.tie(NULL);
 
-  headerFooter();
-  for (int i = 0; i < 5; i++)
-  {
-    body();
-  }
-  headerFooter();
+  int a, b, c;
 
+  scanf("%d %d %d", &a, &b, &c);
+
+  printf("A = %d, B = %d, C = %d\n", a, b, c);
+  printf("A = %10d, B = %10d, C = %10d\n", a, b, c);
+  printf("A = %010d, B = %010d, C = %010d\n", a, b, c);
+  printf("A = %-10d, B = %-10d, C = %-10d\n", a, b, c);
   return 0;
 }
