@@ -50,3 +50,20 @@ int main()
   return true;
   return 0;
 }
+
+// OTIMIZADA
+
+static bool canConstruct(const string &ransom_note, const string &magazine)
+{
+  int letters[26]{0};
+
+  for (char c : magazine)
+    +letters[c - 'a'];
+  for (char c : ransom_note)
+  {
+    if (--letters[c - 'a'] < 0)
+      return false;
+  }
+
+  return true;
+}
